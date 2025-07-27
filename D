@@ -1,1 +1,587 @@
+Day 3 OOPs with Java SE - Threads
+Agenda :
+o Package
+o Exception Handling
+o Threads
+Day2 Revisit:
 
+OOPS revisit
+1) Abstraction – Hiding the implementation ( Interface & Abstract Class)
+2) Encapsulation – Hiding Data (Using the access modifier) [Binding code &data
+together]
+3) Inheritance
+4) Polymorphism – Poly + Morphing (Many) – It encourage code reusability.
+Strongly Typed data – Static type (data)
+Weakly typed /Dynamically typed. (It auto-detect the variable type depending the
+assigned value)
+Types of Polymorphism
+1) Static – Compile Time – Method overloading (With in a class)
+2) Dynamic – Runtime - Method overriding (Between parent & child class)
+Method Overloading – Reusing the same method by changing it’s signature (Within a
+class)
+1) Change no. of arguments
+2) Change data type of arguments
+3) Change return type of arguments (Less eƯect)
+Method Overriding – Reusing the same method in a child/derived class without
+changing it’s signature.
+Exception Handling in JAVA
+ Exception Hierarchy in JAVA (Throwable)
+Types of Exception (Based on catching the exception)
+1) Compile Time (Checked Exception) – Needs to handle it properly in advance
+2) Runtime Exception (Un-Checked Exception) –
+Error is a state which prevents the execution of program.
+Exception is a state which disturbs the normal flow of the program.
+If a program ends without executing all the lines, then it is called as Pre-mature
+termination.
+Ways of handling Exception
+1) Using throws keyword (Passing the responsibility) - Not recommended
+2) Using try/catch block (recommended)
+Costlier Operation/Process – If a process/task take lot of time to run/ lot of memory to
+run.
+Examples of Runtime Exception
+1) Arithmetic Exception
+2) ArrayIndexOutofBoundException
+Exception Types based on creators
+1) Built-in / Pre-defined Exceptions
+2) Custom/ User-defined Exceptions
+Try/catch block
+1) This is a recommended way of handling exception.
+2) Try block should have catch or finally or both.
+3) The code inside finally block gets executed irrespective of exception status
+4) Catch block can catch one, one or more exception.
+5) Try block can have n number catch blocks but only one finally block.
+DiƯ betw throw and throws
+Throw keyword helps to throw a exception object.
+Throws keyword inform the jvm that the code in the following block might throw some
+exception.
+https://medium.com/@reetesh043/using-try-with-resources-in-java-simplifyingresource-management-bd9ed8cc8754
+Threads – Is a light weight process.
+Process – Is a heavy weight thread.
+Process – Program in running state/mode.
+Each process will have pid (process ID) – It occupies some memory either in RAM/ROM.
+Program – Set of Instruction/Statements.
+To enable parallel processing.
+Ways of Creating Thread in JAVA
+1)Using Thread class
+2) Using Runnable Interface.
+Synchronous & Asynchronous mode
+1) Print in Hello in console (2 ms)
+2) Open a file and print it’s content in console (200 ms)
+3) Open a DB connection, store the data in a table (600 ms)
+4) Open a network and download a file/resource (1500 ms)
+5) Print Bye message (2 ms)
+Thread Life cycle
+https://exercism.org/tracks/java
+synchronized (Helps to avoid dead-lock in JAVA)
+https://www.scaler.com/topics/deadlock-in-java/
+Com.cams.bank – Base Package (Where Starter class is present)
+Com.cams.bank.bean – (Package to hold all the bean/entity classes) [Customer,
+Account]
+Com.cams.bank.util – (Utility classes/Helper classes)
+Com.cams.bank.exception (For all custom exception classes)
+Com.cams.bank.enums – (To store all custom enums) 
+
+
+________________________________________________________________________________________
+
+Day 3 OOPs with Java SE - Threads
+Agenda :
+o Package
+o Exception Handling
+o Threads
+Day2 Revisit:
+
+OOPS revisit
+1) Abstraction – Hiding the implementation ( Interface & Abstract Class)
+2) Encapsulation – Hiding Data (Using the access modifier) [Binding code &data
+together]
+3) Inheritance
+4) Polymorphism – Poly + Morphing (Many) – It encourage code reusability.
+Strongly Typed data – Static type (data)
+Weakly typed /Dynamically typed. (It auto-detect the variable type depending the
+assigned value)
+Types of Polymorphism
+1) Static – Compile Time – Method overloading (With in a class)
+2) Dynamic – Runtime - Method overriding (Between parent & child class)
+Method Overloading – Reusing the same method by changing it’s signature (Within a
+class)
+1) Change no. of arguments
+2) Change data type of arguments
+3) Change return type of arguments (Less eƯect)
+Method Overriding – Reusing the same method in a child/derived class without
+changing it’s signature.
+Exception Handling in JAVA
+ Exception Hierarchy in JAVA (Throwable)
+Types of Exception (Based on catching the exception)
+1) Compile Time (Checked Exception) – Needs to handle it properly in advance
+2) Runtime Exception (Un-Checked Exception) –
+Error is a state which prevents the execution of program.
+Exception is a state which disturbs the normal flow of the program.
+If a program ends without executing all the lines, then it is called as Pre-mature
+termination.
+Ways of handling Exception
+1) Using throws keyword (Passing the responsibility) - Not recommended
+2) Using try/catch block (recommended)
+Costlier Operation/Process – If a process/task take lot of time to run/ lot of memory to
+run.
+Examples of Runtime Exception
+1) Arithmetic Exception
+2) ArrayIndexOutofBoundException
+Exception Types based on creators
+1) Built-in / Pre-defined Exceptions
+2) Custom/ User-defined Exceptions
+Try/catch block
+1) This is a recommended way of handling exception.
+2) Try block should have catch or finally or both.
+3) The code inside finally block gets executed irrespective of exception status
+4) Catch block can catch one, one or more exception.
+5) Try block can have n number catch blocks but only one finally block.
+DiƯ betw throw and throws
+Throw keyword helps to throw a exception object.
+Throws keyword inform the jvm that the code in the following block might throw some
+exception.
+https://medium.com/@reetesh043/using-try-with-resources-in-java-simplifyingresource-management-bd9ed8cc8754
+Threads – Is a light weight process.
+Process – Is a heavy weight thread.
+Process – Program in running state/mode.
+Each process will have pid (process ID) – It occupies some memory either in RAM/ROM.
+Program – Set of Instruction/Statements.
+To enable parallel processing.
+Ways of Creating Thread in JAVA
+1)Using Thread class
+2) Using Runnable Interface.
+Synchronous & Asynchronous mode
+1) Print in Hello in console (2 ms)
+2) Open a file and print it’s content in console (200 ms)
+3) Open a DB connection, store the data in a table (600 ms)
+4) Open a network and download a file/resource (1500 ms)
+5) Print Bye message (2 ms)
+Thread Life cycle
+https://exercism.org/tracks/java
+synchronized (Helps to avoid dead-lock in JAVA)
+https://www.scaler.com/topics/deadlock-in-java/
+Com.cams.bank – Base Package (Where Starter class is present)
+Com.cams.bank.bean – (Package to hold all the bean/entity classes) [Customer,
+Account]
+Com.cams.bank.util – (Utility classes/Helper classes)
+Com.cams.bank.exception (For all custom exception classes)
+Com.cams.bank.enums – (To store all custom enums) 
+
+
+______________________________________________________________________
+Day5 – Generics, Reflection, IO
+Day4 Revisit – Collection API.
+API – Application Programming Interface – Reusing the existing code.
+Collection API – Is a set of Interfaces, Classes (Abstract & Concrete) to perform
+operations on Group of objects. [Sorting, Searching, processing each element
+individually]
+Iterable – Collection – i) List ii) Set iii) Queue
+Interface – Is a specification (It will have abstract methods)
+i) Array List ( Dynamically growing Array ) – Stores the data in consecutive
+memory location. [Easy to add/remove element at the last index – LIFO]
+(costly operation – Inserting/removing element in the beginning or middle]
+ii) LinkedList ( It store data in random memory location)
+List allows duplicate value, Maintain insertion order, Allows null value.
+1) Using normal for loop
+2) Using Enhanced for loop (for-each loop)
+3) Using Iterator/ListIterator
+Set (HashSet, TreeSet)
+1) Set won’t allow duplicates
+2) HashSet Allow null only once.
+3) Won’t maintain the insertion order
+4) If duplicate value is passed, it will overwrite the existing data/element.
+5) TreeSet won’t allow null values
+6) TreeSet stores the data in a sorted format.
+Queue – It implements FIFO
+Map – It store the data in Key, value pair.
+1) Key should be unique
+2) HashMap allows null Key only once
+3) TreeMap won’t allow null key.
+4) TreeMap store the keys in ascending order by default.
+5) Value can have null many times.
+6) Duplicates are allowed for values.
+All this Interfaces and classes are defined inside java.util package.
+Generics
+1) It is used along with collection to promote type safety.
+2) Generics is given using angular brackets <> [<String>,
+<Integer>,<Number>,<Employee>, <Book> etc.,]
+3) T – Type , E-Element, K-Key, V- Value
+Wrapper Class (java.lang)
+Sl No Primitive Wrapper Class
+1 boolean Boolean
+2 byte Byte
+3 char Character
+4 short Short
+5 int Integer
+6 float Float
+7 double Double
+8 long Long
+Public class Circle<T> {
+ Public T findArea(T data) {
+ Return (3.14*data*data);
+}
+}
+ class Box<T> {
+ private T value;
+ public void set(T value) {
+ this.value = value;
+ }
+ public T get() {
+ return value;
+ }
+ }
+List<Integer> numberList = new ArrayList<Integer>();
+List<T extends Number> numbers = new ArrayList<Number>(); - Read only collection.
+You can’t add data. Used for reading existing collection.
+List<T extends Account>
+1) Type Safety
+2) Code Reusability
+3) No Typecasting
+Varargs = varrying Arguments
+String[] args == Array of String
+Int… args == varargs declaration syntax (…)
+Reflection – Reflection in Java is a powerful feature that allows a program to inspect
+and manipulate its own structure and behaviour at runtime.
+Objects, Object, Class
+ThreadSafety – If a class uses synchronized methods, then it is called Thread Safe class.
+StringBuƯer – Is a ThreadSafe class (slower thanStringBuilder)
+StringBuilder – Is not a ThreadSafe class
+Vector is ThreadSafe.
+All the classes and interfaces related to Reflection is available in java.lang.reflect
+package.
+Method
+Field
+Constructor
+Parameter
+IO Operations in JAVA
+Package name is java.io (Input & Output)
+System – in (Input Stream) , out (Output Stream) , err (Error Stream)
+Standard Output/Error – Monitor/Terminal/Console
+Standard Input – Keyboard.
+Byte – Character based ( 1 byte [8 bits] – 2 Bytes [16 bits] )
+In Java, Stream represents flow of data.
+In  Program is reading the data from stream.
+Out & err  Program to terminal ( program is writing the data to stream)
+File Input
+Stream
+Byte Array Input
+Stream
+Piped Input
+Stream
+Object Input
+Stream
+Input
+Stream
+Filter Input
+Stream
+Data Input
+Stream
+Buffered Input
+Stream
+Pushback Input
+Stream
+SCALER
+Topics
+CharArrayReader
+Reader
+FilterReader LineNumberInputStream
+InputStreamReader PushbankInputStream
+PipedReader
+Object
+PipedWriter
+PrintWriter
+StringWriter
+BufferedReader BufferedInputStream
+BufferedWriter
+CharArrayWriter
+OutputStreamWriter FileWriter
+Writer
+FilterWriter
+Reader Writer
+InputStreamReader
+FileReader
+BufferedReader
+LineNumberReader
+FilterReader
+PushbackReader
+CharArray Reader
+PipedReader
+StringReader
+OutputStreamWriter
+FileWriter
+BufferedWriter
+FilterWriter
+CharArrayWriter
+PipedWriter
+StringWriter
+We can’t create object of Interface & Abstract class but Object Reference can be
+created.
+Serialization – Is the process of storing the state of Class to a flat file.
+You need to Implement Serializable interface (Marker Interface)
+JDBC – API (Java Data Base Connectivity API) (java.sql)
+Interfaces & Abstract Classes – Specification.
+Laptop (HP – Cannon printer)
+1) Driver Installation
+2) Establish the connection
+3) Test Print
+4) Actual Print
+5) Power OƯ (close)
+Unified way of interacting with Any data base (any RDBMS)
+Local Database Setup ( Client/Server Application)
+1) Database Server
+2) Database Client (CLI/GUI Client)
+For MySQL
+1) MySQL8.exe (server)
+2) MySQLCliClient (CUI) & MySQL Workbench (GUI) [clients]
+https://db4free.net/
+https://livesql.oracle.com/next/
+https://sqliteonline.com/
+https://www.freesqldatabase.com/
+https://dbeaver.io/download/
+Any RDBMS is Client/Server Application
+1) Database Server
+2) Database Client
+Sl
+No
+DB Name Server Name Client Name Default Port Connection
+String
+1 Orace (XE) apex Webclient
+(browser)
+8080
+2 MySQL MySQL80 WorkBench (GUI) 3306
+3 Postgres postgres pgAdmin (GUI) 5432
+DiƯerent ways of Interacting with DB Server
+1) Using GUI Client (MySQL Workbench)
+2) Using CUI Client (MySQL CommandLineClient/Mysqlsh)
+3) Using Programming Lang (JAVA/Python/Node/JS)
+JDBC
+CREATE TABLE `cams`.`employee` (
+ `id` INT NOT NULL AUTO_INCREMENT,
+ `name` VARCHAR(250) NULL,
+ `email` VARCHAR(250) NULL,
+ `mobile` BIGINT(10) NULL,
+ PRIMARY KEY (`id`));
+Steps in JDBC
+1) Registering & Loading DB driver (MySQL Driver)
+2) Establish DB connection
+3) Create Statement (Store the SQL query)
+4) Execute() -- Execute Query & Process the Result
+5) Close all Resource.
+https://www.gmail.com
+jdbc:mysql://localhost:3306/cams – Connection (root/root)
+Java.sql
+1) Driver (I)
+2) Connection (I) & DriverManager.getConnection() --- Connection String (url)
+3) Statement (I) & PreparedStatement (I) & CallableStatement (I)
+4) ResultSet
+5) close()
+https://downloads.mysql.com/archives/c-j/ 
+__________________________________________________________________
+
+Day5 – Generics, Reflection, IO
+Day4 Revisit – Collection API.
+API – Application Programming Interface – Reusing the existing code.
+Collection API – Is a set of Interfaces, Classes (Abstract & Concrete) to perform
+operations on Group of objects. [Sorting, Searching, processing each element
+individually]
+Iterable – Collection – i) List ii) Set iii) Queue
+Interface – Is a specification (It will have abstract methods)
+i) Array List ( Dynamically growing Array ) – Stores the data in consecutive
+memory location. [Easy to add/remove element at the last index – LIFO]
+(costly operation – Inserting/removing element in the beginning or middle]
+ii) LinkedList ( It store data in random memory location)
+List allows duplicate value, Maintain insertion order, Allows null value.
+1) Using normal for loop
+2) Using Enhanced for loop (for-each loop)
+3) Using Iterator/ListIterator
+Set (HashSet, TreeSet)
+1) Set won’t allow duplicates
+2) HashSet Allow null only once.
+3) Won’t maintain the insertion order
+4) If duplicate value is passed, it will overwrite the existing data/element.
+5) TreeSet won’t allow null values
+6) TreeSet stores the data in a sorted format.
+Queue – It implements FIFO
+Map – It store the data in Key, value pair.
+1) Key should be unique
+2) HashMap allows null Key only once
+3) TreeMap won’t allow null key.
+4) TreeMap store the keys in ascending order by default.
+5) Value can have null many times.
+6) Duplicates are allowed for values.
+All this Interfaces and classes are defined inside java.util package.
+Generics
+1) It is used along with collection to promote type safety.
+2) Generics is given using angular brackets <> [<String>,
+<Integer>,<Number>,<Employee>, <Book> etc.,]
+3) T – Type , E-Element, K-Key, V- Value
+Wrapper Class (java.lang)
+Sl No Primitive Wrapper Class
+1 boolean Boolean
+2 byte Byte
+3 char Character
+4 short Short
+5 int Integer
+6 float Float
+7 double Double
+8 long Long
+Public class Circle<T> {
+ Public T findArea(T data) {
+ Return (3.14*data*data);
+}
+}
+ class Box<T> {
+ private T value;
+ public void set(T value) {
+ this.value = value;
+ }
+ public T get() {
+ return value;
+ }
+ }
+List<Integer> numberList = new ArrayList<Integer>();
+List<T extends Number> numbers = new ArrayList<Number>(); - Read only collection.
+You can’t add data. Used for reading existing collection.
+List<T extends Account>
+1) Type Safety
+2) Code Reusability
+3) No Typecasting
+Varargs = varrying Arguments
+String[] args == Array of String
+Int… args == varargs declaration syntax (…)
+Reflection – Reflection in Java is a powerful feature that allows a program to inspect
+and manipulate its own structure and behaviour at runtime.
+Objects, Object, Class
+ThreadSafety – If a class uses synchronized methods, then it is called Thread Safe class.
+StringBuƯer – Is a ThreadSafe class (slower thanStringBuilder)
+StringBuilder – Is not a ThreadSafe class
+Vector is ThreadSafe.
+All the classes and interfaces related to Reflection is available in java.lang.reflect
+package.
+Method
+Field
+Constructor
+Parameter
+IO Operations in JAVA
+Package name is java.io (Input & Output)
+System – in (Input Stream) , out (Output Stream) , err (Error Stream)
+Standard Output/Error – Monitor/Terminal/Console
+Standard Input – Keyboard.
+Byte – Character based ( 1 byte [8 bits] – 2 Bytes [16 bits] )
+In Java, Stream represents flow of data.
+In  Program is reading the data from stream.
+Out & err  Program to terminal ( program is writing the data to stream)
+File Input
+Stream
+Byte Array Input
+Stream
+Piped Input
+Stream
+Object Input
+Stream
+Input
+Stream
+Filter Input
+Stream
+Data Input
+Stream
+Buffered Input
+Stream
+Pushback Input
+Stream
+SCALER
+Topics
+CharArrayReader
+Reader
+FilterReader LineNumberInputStream
+InputStreamReader PushbankInputStream
+PipedReader
+Object
+PipedWriter
+PrintWriter
+StringWriter
+BufferedReader BufferedInputStream
+BufferedWriter
+CharArrayWriter
+OutputStreamWriter FileWriter
+Writer
+FilterWriter
+Reader Writer
+InputStreamReader
+FileReader
+BufferedReader
+LineNumberReader
+FilterReader
+PushbackReader
+CharArray Reader
+PipedReader
+StringReader
+OutputStreamWriter
+FileWriter
+BufferedWriter
+FilterWriter
+CharArrayWriter
+PipedWriter
+StringWriter
+We can’t create object of Interface & Abstract class but Object Reference can be
+created.
+Serialization – Is the process of storing the state of Class to a flat file.
+You need to Implement Serializable interface (Marker Interface)
+JDBC – API (Java Data Base Connectivity API) (java.sql)
+Interfaces & Abstract Classes – Specification.
+Laptop (HP – Cannon printer)
+1) Driver Installation
+2) Establish the connection
+3) Test Print
+4) Actual Print
+5) Power OƯ (close)
+Unified way of interacting with Any data base (any RDBMS)
+Local Database Setup ( Client/Server Application)
+1) Database Server
+2) Database Client (CLI/GUI Client)
+For MySQL
+1) MySQL8.exe (server)
+2) MySQLCliClient (CUI) & MySQL Workbench (GUI) [clients]
+https://db4free.net/
+https://livesql.oracle.com/next/
+https://sqliteonline.com/
+https://www.freesqldatabase.com/
+https://dbeaver.io/download/
+Any RDBMS is Client/Server Application
+1) Database Server
+2) Database Client
+Sl
+No
+DB Name Server Name Client Name Default Port Connection
+String
+1 Orace (XE) apex Webclient
+(browser)
+8080
+2 MySQL MySQL80 WorkBench (GUI) 3306
+3 Postgres postgres pgAdmin (GUI) 5432
+DiƯerent ways of Interacting with DB Server
+1) Using GUI Client (MySQL Workbench)
+2) Using CUI Client (MySQL CommandLineClient/Mysqlsh)
+3) Using Programming Lang (JAVA/Python/Node/JS)
+JDBC
+CREATE TABLE `cams`.`employee` (
+ `id` INT NOT NULL AUTO_INCREMENT,
+ `name` VARCHAR(250) NULL,
+ `email` VARCHAR(250) NULL,
+ `mobile` BIGINT(10) NULL,
+ PRIMARY KEY (`id`));
+Steps in JDBC
+1) Registering & Loading DB driver (MySQL Driver)
+2) Establish DB connection
+3) Create Statement (Store the SQL query)
+4) Execute() -- Execute Query & Process the Result
+5) Close all Resource.
+https://www.gmail.com
+jdbc:mysql://localhost:3306/cams – Connection (root/root)
+Java.sql
+1) Driver (I)
+2) Connection (I) & DriverManager.getConnection() --- Connection String (url)
+3) Statement (I) & PreparedStatement (I) & CallableStatement (I)
+4) ResultSet
+5) close()
+https://downloads.mysql.com/archives/c-j/ 
